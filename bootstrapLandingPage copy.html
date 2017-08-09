@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+      
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      
+      <!--NON-Bootsrap style-->  
+        <style>
+            body {
+                background-color: black;
+            }  
+            
+            #comapnyName {
+                color: maroon;
+            }
+            
+            #home-link {
+                color: lightslategrey;
+            }
+            
+            #about-link {
+                color: lightslategrey;
+            }
+            
+            .jumbotron {
+                height: 1200px;
+                width: 100%;
+                background-image: url(ghosteryEight.jpg);
+                background-size: 100%;
+            }
+            
+            .display-3 {    
+                color: maroon;
+            }
+            
+            #art-crea {
+               margin-left: 240px; 
+            }
+            
+      .lead {
+                color: grey;
+            }*//
+            
+            #mailingMessage {
+               color: gray;
+                padding-top: 15px;
+            }
+            
+            .form-inline {
+                padding-top: 40px;
+                justify-content: center; 
+                
+            }
+            
+            .card-img-top {
+
+                width: 100%;
+                height: 100;
+            }
+            
+            .card-block {
+                background-color: black;
+            }
+            
+            .card-title {
+                color: slategray;
+            }
+            .card-text {
+                
+                color: grey;
+            }
+            
+            #sign-up {
+                margin-left: 8px;
+            }
+            
+            #join-list {
+                text-align: center;
+            }
+            
+            #footer {
+                height: 200px;
+              background-color: #1e1d1c;
+                color: dimgrey;
+                padding-top: 90px;
+                margin-top: 50px;
+                padding-bottom: 200px;
+                justify-content: center;
+            }
+
+        </style>
+      
+  </head>
+<!--bootstrap unordered list navbar-->
+      <body>
+        <nav class="navbar navbar-toggleable-sm bg-inverse">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" id="comapnyName" href="#">SpokenInRed</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" id="home-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="about-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Download App</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="email" placeholder="Email">
+              <input class="form-control mr-sm-2" type="password" placeholder="Password">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button> 
+            </form>
+          </div>
+          </nav>
+<!--basic jumbotron-->
+          <div class="jumbotron">
+            <h1 class="display-3">SpokenInRed</h1>
+            <p class="lead" id="art-crea">Artography Creations</p>
+            <hr class="my-4">
+   <!--         <p id="mailingMessage">Join mailing list below <br>for exclusive <br>previews.</p>-->
+              <p id="mailingMessage"> <br> </p>
+          </div>
+<!--A space to say even more???-->
+<div class="container" id="say-more">
+          
+        <!-- <h1>SpokeInRed provides artograohy's finest art imagery gallery for the visual kinesthetic atomosphere we didn't know we crave.</h1> -->
+          
+          </div>
+          
+          
+          
+          
+          
+<!--card deck for links to differnt photo types-->
+
+<div class="container">
+    <div class="card-deck">
+    
+    <div class="card">
+        <img class="card-img-top" src="dreamDiaries.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Dream</h4>
+          <p class="card-text">Spoken visual images for the sleep filled soul.</p>
+ <!--         <p class="card-text"><small class="text-muted">Exclusive preview.</small></p>-->
+        </div>
+    </div>
+    
+    <div class="card">
+        <img class="card-img-top" src="point.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Dance</h4>
+          <p class="card-text">Take flight with choreographed visual movement.</p>
+ <!--         <p class="card-text"><small class="text-muted">Exclusive preview.</small></p>-->
+        </div>
+    </div>
+    
+    <div class="card">
+        <img class="card-img-top" src="fashionesque.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Fashionesque</h4>
+            
+          <p class="card-text">Unspoken fashion images.</p>
+ <!--         <p class="card-text"><small class="text-muted">Exclusive preview.</small></p>-->
+        </div>
+    </div>
+</div>
+          </div>
+ <!--sign up-->
+<div class="container">
+          <form class="form-inline my-2 my-lg-0">
+                <small id="emailHelp" class="form-text text-muted"></small>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <button type="submit" class="btn btn-primary" id="sign-up">Sign Up</button>
+          </form>
+   <p id="join-list">Join mailing list for exclusive previews</p>
+          </div>    
+
+          
+            <div class="row" id="footer">
+                
+                <small>All rights reserved, SpokenInRed, Artography Creations 2017</small>
+            
+                </div>
+          
+  
+
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+      </body>
+    
+</html>
