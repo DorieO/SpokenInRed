@@ -1,208 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-  <head>
-      
+<html lang="en">  
+  <head> 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <!--links-->
+      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      
-      <!--NON-Bootsrap style-->  
+      <!--social media link buttons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--css-->  
         <style>
             body {
+                position: relative;
                 background-color: black;
-            }  
-            
+            }
+/*nav*/
             #comapnyName {
                 color: maroon;
             }
-            
             #home-link {
                 color: lightslategrey;
             }
-            
             #about-link {
                 color: lightslategrey;
             }
-            
+            #join-link {
+                color: lightslategrey;
+            }
+/*jumbotron*/
             .jumbotron {
-                height: 1200px;
+                background-color: black;
+                height: 1000px;
                 width: 100%;
                 background-image: url(ghosteryEight.jpg);
                 background-size: 100%;
+                background-repeat:no-repeat;
+                display: compact;   
             }
-            
+            #jumbotron-image-link {
+                text-decoration: none;
+            }
             .display-3 {    
                 color: maroon;
+                padding-top: 20px;s
             }
-            
             #art-crea {
                margin-left: 240px; 
-            }
-            
-      .lead {
+            }          
+            .lead {
                 color: grey;
-            }*//
-            
+            }
+        /*
             #mailingMessage {
                color: gray;
                 padding-top: 15px;
-            }
-            
-            .form-inline {
-                padding-top: 40px;
-                justify-content: center; 
-                
-            }
-            
-            .card-img-top {
+            }    */       
 
+    /*cards*/
+            .card {               
+                margin-top: 17px;
+                margin-left: 15px;
+            }         
+            .card-img-top {
                 width: 100%;
                 height: 100;
-            }
-            
+            }            
             .card-block {
                 background-color: black;
             }
-            
             .card-title {
                 color: slategray;
             }
             .card-text {
-                
                 color: grey;
             }
-            
+    /*sign up*/
+            #sign-up-form {
+                padding-top: 40px;
+                justify-content: center; 
+             }           
             #sign-up {
                 margin-left: 8px;
             }
-            
-            #join-list {
-                text-align: center;
-            }
-            
+/*footer*/
             #footer {
+                align-content: center;
                 height: 200px;
-              background-color: #1e1d1c;
+                background-color: #1e1d1c;
                 color: dimgrey;
-                padding-top: 90px;
+                padding-top: 10px;
                 margin-top: 50px;
-                padding-bottom: 200px;
-                justify-content: center;
+                padding-bottom: 200px;                
             }
-
+        /*social media*/
+            #socials {
+                justify-content: center;
+                padding-top: 15px;
+            }
+            .fa {
+                padding: 8px;
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+                border-radius: 10%;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px;
+            }
+            .fa:hover {
+                opacity: 0.7;
+                background-color: lightsteelblue;
+            }
+            .fa-twitter {
+                background: #1DA1F2;
+                color: white;
+            }
+            .fa-etsy {
+                background: #1DA1F2;
+                color: white;
+            }
+            .fa-instagram {
+                background: #517fa4;
+                color: white;
+            }
+            .fa-etsy {
+                background: #F56400;
+                color: white;
+            }
+    /*copy rights*/
+            #all-rights {
+                margin-top: 10px;
+                font-size: 13px;
+                text-align: center;    
+            }
         </style>
-      
   </head>
+    <body data-spy="scroll" data-target="#navbar" data-offset="150">
 <!--bootstrap unordered list navbar-->
-      <body>
-        <nav class="navbar navbar-toggleable-sm bg-inverse">
+        <!--fix navbar to collapse right-->
+    <nav class="navbar navbar-toggleable-sm bg-inverse navbar-fixed-top"  id="navbar">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" id="comapnyName" href="#">SpokenInRed</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" id="home-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="about-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Download App</a>
-              </li>
-            </ul>
+          <a class="navbar-brand" id="comapnyName" href="#navbar">SpokenInRed</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" id="home-link" href="#jumbotron">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="about-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="join-link" href="#join-list">Join</a>
+                  </li>
+                </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="email" placeholder="Email">
               <input class="form-control mr-sm-2" type="password" placeholder="Password">
               <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button> 
             </form>
           </div>
-          </nav>
+    </nav>
 <!--basic jumbotron-->
-          <div class="jumbotron">
-            <h1 class="display-3">SpokenInRed</h1>
-            <p class="lead" id="art-crea">Artography Creations</p>
-            <hr class="my-4">
-   <!--         <p id="mailingMessage">Join mailing list below <br>for exclusive <br>previews.</p>-->
-              <p id="mailingMessage"> <br> </p>
-          </div>
-<!--A space to say even more???-->
-<div class="container" id="say-more">
-          
-        <!-- <h1>SpokeInRed provides artograohy's finest art imagery gallery for the visual kinesthetic atomosphere we didn't know we crave.</h1> -->
-          
-          </div>
-          
-          
-          
-          
-          
+        <a href="https://www.etsy.com/listing/231929516/gothic-home-decor-gothic-wall-art?ref=shop_home_active_25" id="jumbotron-image-link" target="_blank">  
+            <div class="jumbotron" id="jumbotron">
+                <h1 class="display-3">SpokenInRed</h1>
+                <p class="lead" id="art-crea">Artography Creations</p>
+                <hr class="my-4">
+                <p id="mailingMessage"> <br> </p>
+            </div>
+        </a>
+<!--A space to say even more???-->        
 <!--card deck for links to differnt photo types-->
+    <div class="container" id="about">
+        <div class="card-deck">
+     <!--card 1-->       
+            <div class="card">
+                <img class="card-img-top" src="dreamDiaries.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="https://www.etsy.com/listing/230537414/when-dreams-die-is-a-photographic?ref=shop_home_active_49" target="_blank" class="card-link">  
+                            <h4 class="card-title">DreamDiaries</h4></a>
+                            <p class="card-text">Spoken visual images for the sleep filled soul.</p>
+                    </div>
+            </div>
+    <!--card 2-->    
+            <div class="card">
+                <img class="card-img-top" src="point.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="https://www.etsy.com/listing/197898339/ballet-wall-art-home-decor-wall-art?ref=related-2" target="_blank" class="card-link">  
+                            <h4 class="card-title">Ballet</h4></a>
+                            <p class="card-text">Take flight with choreographed visual movement.</p>
+                    </div>
+            </div>
+     <!--card 3-->     
+            <div class="card">
+                <img class="card-img-top" src="fashionesque.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="https://www.etsy.com/listing/154725887/madame-peacock-is-a-fashion-portrait-of?ref=shop_home_active_14" target="_blank" class="card-link">
+                            <h4 class="card-title">EthereaFemme</h4></a>
+                            <p class="card-text">Unspoken fashion images.</p>
+                    </div>
+            </div>
+    <!--card 4-->        
 
-<div class="container">
-    <div class="card-deck">
-    
-    <div class="card">
-        <img class="card-img-top" src="dreamDiaries.jpg" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Dream</h4>
-          <p class="card-text">Spoken visual images for the sleep filled soul.</p>
- <!--         <p class="card-text"><small class="text-muted">Exclusive preview.</small></p>-->
+            <div class="card">
+                <img class="card-img-top" src="portrait3.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="https://www.etsy.com/listing/158860055/gothic-dark-romantic-wall-art-goth-art?ref=shop_home_active_41" target="_blank" class="card-link">
+                            <h4 class="card-title">PortraitsGothic</h4></a>
+                            <p class="card-text">Portray the inner you.</p>
+                    </div>
+            </div>
         </div>
     </div>
-    
-    <div class="card">
-        <img class="card-img-top" src="point.jpg" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Dance</h4>
-          <p class="card-text">Take flight with choreographed visual movement.</p>
- <!--         <p class="card-text"><small class="text-muted">Exclusive preview.</small></p>-->
-        </div>
-    </div>
-    
-    <div class="card">
-        <img class="card-img-top" src="fashionesque.jpg" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Fashionesque</h4>
-            
-          <p class="card-text">Unspoken fashion images.</p>
- <!--         <p class="card-text"><small class="text-muted">Exclusive preview.</small></p>-->
-        </div>
-    </div>
-</div>
-          </div>
+<!--to here-->
  <!--sign up-->
-<div class="container">
-          <form class="form-inline my-2 my-lg-0">
-                <small id="emailHelp" class="form-text text-muted"></small>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <div class="container">
+        <form class="form-inline my-2 my-lg-0" id="sign-up-form">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  id="join-list">
                 <button type="submit" class="btn btn-primary" id="sign-up">Sign Up</button>
-          </form>
-   <p id="join-list">Join mailing list for exclusive previews</p>
-          </div>    
-
-          
-            <div class="row" id="footer">
-                
-                <small>All rights reserved, SpokenInRed, Artography Creations 2017</small>
-            
-                </div>
-          
-  
-
-
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        </form>
+    </div>  
+<!--footer--> 
+    <div class="row" id="footer">
+        <div class="container">
+<!-- Add font awesome icons social media buttons add more?-->
+            <div class="row" id="socials">
+                <a href="https://twitter.com/spokeninred?lang=en" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.etsy.com/shop/SpokeninRed?ref=l2-shop-header-avatar" target="_blank" class="fa fa-etsy"></a>
+                <a href="https://www.instagram.com/spokeninred/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+                <p id="all-rights">All rights reserved, SpokenInRed, Artography Creations 2017</p>
+        </div>
+    </div>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-      </body>
-    
+</body>    
 </html>
